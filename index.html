@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The multiplication table trainer that knows you!</title>
+</head>
+<body>
+  <div id="parent">
+  <div id="problemdiv">
+<p id="answerParagraph">Her kommer oppgaven</p>
+<input type="number" id="answerbox" max="1" min ="100">
+<br>
+<p id="correctParagraph">Good luck!</p>
+<br>
+<p id="score"></p>
+<p id="testparagraph"></p>
+<br>
+<br>
+<input type="button" id="starttimer" value="Start timed mode" onclick="startTimed();timerTips()"><br>
+<input type="button"  value="Easy mode" onclick="startEasy()">
+<input type="button" value="Hard mode" onclick="startHard()">
+<input type="button" value="Insane mode" onclick="startMaster()">
+</div>
+<div id="lockedDiv">
+</div>
+</div>
+<style>
+#lockedDiv {padding: 20px;width:40%;}
+#parent {display: flex; }
+#problemdiv {font-size: xx-large;width: 30%}
+#answerbox {font-size: xx-large;}
+.lockedimg {width : 10%; height: auto;}
+</style>
+
+
+<script src="script2.js"></script>
+
+<br><br><br>
+Sound effects obtained from https://www.zapsplat.com
+</body>
+</html>
